@@ -21,3 +21,9 @@ task runExperiment(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     standardInput = System.in
 }
+
+task runQuick(type: JavaExec) {
+    mainClass = 'co.icesi.fractal.client.QuickBenchmark'
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+}
